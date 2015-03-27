@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+         >
+
+<ScrollView 
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="40dp"
+     >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/demoback"
+     >
+    
+       <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="7dp"
+        android:layout_marginTop="5dp"
+        android:ems="20"
+        android:hint="Name"
+        android:imeOptions="actionNext"
+        android:textSize="13dp"
+        android:inputType="text|textNoSuggestions" 
+     />
+       
+          <EditText
+        android:id="@+id/fathname"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="7dp"
+        android:ems="10"
+        android:hint="Father's name"
+        android:imeOptions="actionNext"
+        android:textSize="13dp"
+        android:inputType="text|textNoSuggestions" />
+          
+          
+             <EditText
+        android:id="@+id/mobiled"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fathname"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="7dp"
+        android:ems="10"
+        android:hint="Mobile no."
+        android:imeOptions="actionNext"
+        android:textSize="13dp"
+        android:inputType="number"
+        android:maxLength="10" />
+             
+             
+                <EditText
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mobiled"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="7dp"
+        android:ems="10"
+        android:hint="Location"
+        android:imeOptions="actionNext"
+        android:textSize="13dp"
+        android:inputType="text|textNoSuggestions" />
+                
+                
+                   <EditText
+        android:id="@+id/village"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/location"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="7dp"
+        android:ems="10"
+        android:hint="Village"
+        android:imeOptions="actionNext"
+        android:textSize="13dp"
+        android:inputType="text|textNoSuggestions" />
+                   
+                      <EditText
+        android:id="@+id/variety"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/village"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="7dp"
+        android:ems="10"
+        android:hint="Variety"
+        android:imeOptions="actionNext"
+        android:textSize="13dp"
+        android:inputType="text|textNoSuggestions" />
+                      
+          <EditText
+        android:id="@+id/sowingdate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/variety"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="7dp"
+        android:ems="10"
+        android:hint="Sowing Date"
+        android:imeOptions="actionNext"
+        android:textSize="13dp"
+        android:drawableRight="@drawable/calender"
+        android:inputType="text|textNoSuggestions" />
+                         
+                            <EditText
+        android:id="@+id/potashdate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/sowingdate"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="7dp"
+        android:ems="10"
+        android:hint="Potash Date"
+        android:imeOptions="actionNext"
+        android:textSize="13dp"
+        android:drawableRight="@drawable/calender"
+        android:inputType="text|textNoSuggestions" />
+
+   
+    
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/potashdate"        
+        android:orientation="vertical" 
+        android:imeOptions="actionNext">
+        <!-- android:background="@android:drawable/editbox_background_normal" -->
+
+        <Spinner
+            android:id="@+id/district"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    
+     <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/linearLayout1"        
+        android:orientation="vertical"
+        android:imeOptions="actionNext" >
+        <!-- android:background="@android:drawable/editbox_background_normal" -->
+
+        <Spinner
+            android:id="@+id/mandi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" 
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/linearLayout2"       
+        android:orientation="vertical"
+        android:imeOptions="actionNext" >
+        <!-- android:background="@android:drawable/editbox_background_normal" -->
+
+        <Spinner
+            android:id="@+id/crop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/linearLayout3"        
+        android:orientation="vertical"
+        android:imeOptions="actionNext" >
+        <!-- android:background="@android:drawable/editbox_background_normal" -->
+
+        <Spinner
+            android:id="@+id/year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/linearLayout4"        
+        android:orientation="vertical"
+        android:imeOptions="actionNext" >
+        <!-- android:background="@android:drawable/editbox_background_normal" -->
+
+        <Spinner
+            android:id="@+id/season"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/linearLayout5"        
+        android:orientation="vertical" 
+        android:imeOptions="actionNext">
+        <!-- android:background="@android:drawable/editbox_background_normal" -->
+
+        <Spinner
+            android:id="@+id/precrop1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/linearLayout6"        
+        android:orientation="vertical"
+        android:imeOptions="actionDone" >
+        <!-- android:background="@android:drawable/editbox_background_normal" -->
+
+        <Spinner
+            android:id="@+id/precrop2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <!-- <AutoCompleteTextView
+             android:id="@+id/autovillage"
+             android:layout_below="@+id/linearLayout2"
+             
+         	 android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+        android:imeOptions="actionNext"     
+		android:inputType="text|textNoSuggestions"	 
+             android:text=""
+             android:hint="Search Village"></AutoCompleteTextView> -->
+    
+    
+     
+</RelativeLayout>
+
+ </LinearLayout>
+    </ScrollView>
+    
+ <LinearLayout 
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="bottom">
+
+  <Button
+    android:id="@+id/demobutton"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:text="SUBMIT"
+    android:layout_marginBottom="1dp"
+    android:textSize="13dp"
+    android:textAlignment="center"
+    android:background="#a5dee7" 
+    />
+  
+  </LinearLayout>
+ </FrameLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0F0F0F0" >
+
+    <Spinner
+        android:id="@+id/mandidistrictlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF" 
+		android:paddingBottom="1dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Firm"            
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="18dp"
+            android:textColor="#FFF"
+            android:padding="5dp"
+            android:background="#188a5b" />
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Name"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            android:textSize="18dp"
+            android:textColor="#FFF"
+            android:padding="5dp"
+            android:background="#188a5b" />
+        
+         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Mobile"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            android:textSize="18dp"
+            android:textColor="#FFF"
+            android:padding="5dp"
+            android:background="#188a5b" />
+
+
+    </TableRow>
+    <ListView
+        android:id="@+id/mandilist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:headerDividersEnabled="true"
+		android:footerDividersEnabled="true"
+		android:listSelector="@android:color/transparent"
+		android:cacheColorHint="@android:color/transparent"
+		android:divider="#FFF"
+		android:padding="0dp"
+		android:dividerHeight="1dp" >
+    </ListView>
+
+    <ProgressBar
+        android:id="@+id/pbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="8"
+        android:visibility="gone" />
+
+</LinearLayout>

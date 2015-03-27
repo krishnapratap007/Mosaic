@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp" >
+             <TextView
+                 android:id="@+id/qnty"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:enabled="false"
+                 android:gravity="left"
+                 android:text="Enter Quantity"
+                 android:textAppearance="?android:attr/textAppearanceMedium" />
+            <EditText
+                android:id="@+id/etqnty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textSize="13sp"
+                android:imeOptions="actionDone"                
+                android:inputType="numberDecimal" />
+
+        </LinearLayout>
+
+
+
+
+</RelativeLayout>

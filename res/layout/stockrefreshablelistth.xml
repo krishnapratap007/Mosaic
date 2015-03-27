@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f0f0f0f0" >
+
+    
+    <Spinner
+        android:id="@+id/districtlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp" />
+    
+    
+    
+    
+    	<aksha.adapters.RefreshableListView
+           	android:id="@+id/stockrefreshable_list"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:headerDividersEnabled="true"
+			android:footerDividersEnabled="true"
+			android:listSelector="@android:color/transparent"
+			android:cacheColorHint="@android:color/transparent"
+			android:divider="@null"
+			android:dividerHeight="10dp" >
+		</aksha.adapters.RefreshableListView>
+		
+</LinearLayout>

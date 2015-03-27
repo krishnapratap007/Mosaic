@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp" >
+
+            <Spinner
+                android:id="@+id/distlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp" >
+
+            <Spinner
+                android:id="@+id/mandilist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp" >
+
+            <Spinner
+                android:id="@+id/currentretailerlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp" >
+
+            <EditText
+                android:id="@+id/mandiname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:imeOptions="actionNext"
+        		android:textSize="13sp"
+        		android:hint="Firm Name"
+                android:inputType="text|textNoSuggestions" />
+            
+            <EditText
+                android:id="@+id/retailername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:hint="Retailer Name"
+                android:textSize="13sp"
+                android:layout_marginTop="5dp"
+                android:inputType="text|textNoSuggestions" />
+            
+            <EditText
+                android:id="@+id/mobilenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:imeOptions="actionDone"
+                android:hint="Mobile Number"
+                android:textSize="13sp"
+                android:layout_marginTop="5dp"
+                android:inputType="phone|textNoSuggestions" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="#f3f3f3"
+        android:gravity="center" >
+
+        	<Button
+                android:id="@+id/addretailer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/buttonorange"
+                android:text="Submit"
+                android:textColor="#FFF" />
+
+        	<LinearLayout
+        	    android:layout_width="match_parent"
+        	    android:layout_height="wrap_content"
+        	    android:orientation="horizontal"
+        		android:layout_marginBottom="5dp"
+        		android:layout_marginLeft="5dp"
+        		android:layout_marginRight="5dp" >
+
+        		<TextView
+        		    android:layout_width="wrap_content"
+        		    android:layout_height="match_parent"
+        		    android:text="Note: "
+        		    android:textStyle="bold" />
+
+        		<TextView
+        		    android:layout_width="wrap_content"
+        		    android:layout_height="wrap_content"
+        		    android:text="Check Current Retailer List before adding a new Retailer." />
+
+        	</LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

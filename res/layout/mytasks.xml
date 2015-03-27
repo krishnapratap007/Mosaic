@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#FFF" >
+	
+        <FrameLayout
+        android:id="@+id/today_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:visibility="gone" >
+
+        
+
+    </FrameLayout>
+    
+        <FrameLayout
+        android:id="@+id/pendings_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:visibility="gone" >
+
+        
+
+    </FrameLayout>
+    
+         <FrameLayout
+        android:id="@+id/future_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:visibility="gone" >
+
+        
+
+    </FrameLayout>
+        
+            <FrameLayout
+        android:id="@+id/calender_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:visibility="gone" >
+
+        
+
+    </FrameLayout>
+        
+
+    </FrameLayout>
+
+     <LinearLayout 
+                  android:orientation="horizontal"
+                  android:layout_width="match_parent" 
+                  android:layout_height="match_parent"
+                  android:layout_weight="9"
+                  android:layout_marginRight="1dp"
+                  android:background="#FFFFFF"
+                  >
+			<!-- #B9D291   #86bc5b -->
+			
+		<FrameLayout
+              android:id="@+id/today"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:background="#96E0D2"
+              android:layout_marginRight="1dp" >
+
+              
+             <TextView 
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:text="Today\nPlans"
+                 android:textSize="15dp"
+                 android:textStyle="bold"
+                 android:gravity="center"/>
+              
+          </FrameLayout>
+			
+          <FrameLayout
+              android:id="@+id/pendings"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:background="#96E0D2"
+              android:layout_marginRight="1dp" >
+
+             
+             <TextView 
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:text="Missed\nPlans"
+                 android:textSize="15dp"
+                 android:textStyle="bold"
+                 android:gravity="center"/>
+              
+          </FrameLayout>
+          
+			<FrameLayout
+              android:id="@+id/calender"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_weight="1.2"
+              android:background="#96E0D2" >
+
+				<ImageView
+				    android:id="@+id/imageView1"
+				    android:layout_width="match_parent"
+				    android:layout_height="match_parent"
+				    android:src="@android:drawable/ic_menu_my_calendar" />
+             
+          </FrameLayout>
+          
+          
+              </LinearLayout>
+</LinearLayout>

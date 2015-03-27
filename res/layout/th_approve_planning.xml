@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+        
+
+     <TableLayout 
+        android:background="#ffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+         
+       <TableRow>
+        <Spinner
+             android:id="@+id/auto_buy1"
+         	 android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+			 android:layout_gravity="bottom"
+             android:text=""
+             android:hint="Search MDO">           
+        </Spinner>
+          
+       </TableRow>
+     </TableLayout> 
+    
+
+      <aksha.adapters.RefreshableListView
+            android:id="@+id/approve_listview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" 
+            android:layout_weight="1">
+        </aksha.adapters.RefreshableListView>
+
+         <Button
+            android:id="@+id/aprrovebutton"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="Approve" />
+     
+
+</LinearLayout>
+   

@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    		<LinearLayout
+    		    android:layout_width="match_parent"
+    		    android:layout_height="match_parent"
+    		    android:orientation="vertical"
+    		    android:padding="10dp" >
+
+    		    <FrameLayout
+    		        android:layout_width="match_parent"
+    		        android:layout_height="wrap_content"
+    		        android:layout_weight="1" >
+
+    		        <ImageView
+    		            android:id="@+id/farmerprofileimage"
+    		            android:layout_width="wrap_content"
+    		            android:layout_height="wrap_content"
+    		            android:layout_gravity="center_horizontal"
+    		            android:src="@drawable/sleep" />
+
+    		        <Button
+    		            android:id="@+id/uploadimage"
+    		            style="?android:attr/buttonStyleSmall"
+    		            android:layout_width="wrap_content"
+    		            android:layout_height="wrap_content"
+    		            android:layout_gravity="bottom|right"
+    		            android:text="Upload\nImage" />
+    		    </FrameLayout>
+
+    		    <TableRow
+    		        android:layout_width="match_parent"
+    		        android:layout_height="match_parent"
+    		        android:layout_weight="1" >
+
+    		        <TextView
+    		            android:layout_width="match_parent"
+    		            android:layout_height="match_parent"
+    		            android:layout_weight="2"
+    		            android:gravity="bottom"
+    		            android:text="Father Name:" />
+
+    		        <EditText
+    		            android:id="@+id/fname"
+    		            android:layout_width="match_parent"
+    		            android:layout_height="match_parent"
+    		            android:layout_weight="1"
+    		            android:imeOptions="actionNext"
+    		            android:inputType="text" />
+    		    </TableRow>
+
+    		    <TableRow
+    		        android:layout_width="match_parent"
+    		        android:layout_height="match_parent"
+    		        android:layout_weight="1" >
+
+    		        <TextView
+    		            android:layout_width="match_parent"
+    		            android:layout_height="match_parent"
+    		            android:layout_weight="2"
+    		            android:gravity="bottom"
+    		            android:text="Tehsil:" />
+
+    		        <EditText
+    		            android:id="@+id/tehsil"
+    		            android:layout_width="match_parent"
+    		            android:layout_height="match_parent"
+    		            android:layout_weight="1"
+    		            android:imeOptions="actionNext"
+    		            android:inputType="text" />
+    		    </TableRow>
+
+    		    <TableRow
+    		        android:layout_width="match_parent"
+    		        android:layout_height="match_parent"
+    		        android:layout_weight="1" >
+
+    		        <TextView
+    		            android:layout_width="match_parent"
+    		            android:layout_height="match_parent"
+    		            android:layout_weight="2"
+    		            android:gravity="bottom"
+    		            android:text="PO:" />
+
+    		        <EditText
+    		            android:id="@+id/dist"
+    		            android:layout_width="match_parent"
+    		            android:layout_height="match_parent"
+    		            android:layout_weight="1"
+    		            android:imeOptions="actionNext"
+    		            android:inputType="text" />
+    		    </TableRow>
+
+    		    <TableRow
+    		        android:layout_width="match_parent"
+    		        android:layout_height="match_parent"
+    		        android:layout_weight="1" >
+
+    		        <TextView
+    		            android:layout_width="match_parent"
+    		            android:layout_height="match_parent"
+    		            android:layout_weight="2"
+    		            android:gravity="bottom"
+    		            android:text="Variety:" />
+
+    		        <EditText
+    		            android:id="@+id/variety"
+    		            android:layout_width="match_parent"
+    		            android:layout_height="match_parent"
+    		            android:layout_weight="1"
+    		            android:imeOptions="actionNext"
+    		            android:inputType="text" />
+    		    </TableRow>
+
+    		    <TableRow
+    		        android:layout_width="match_parent"
+    		        android:layout_height="match_parent"
+    		        android:layout_marginTop="2dp"
+    		        android:layout_weight="1" >
+
+    		        <TextView
+    		            android:layout_width="match_parent"
+    		            android:layout_height="match_parent"
+    		            android:layout_weight="2"
+    		            android:gravity="bottom"
+    		            android:text="Previous Crop1:" />
+
+    		        <EditText
+    		            android:id="@+id/crop1"
+    		            android:layout_width="match_parent"
+    		            android:layout_height="match_parent"
+    		            android:layout_weight="1"
+    		            android:imeOptions="actionNext"
+    		            android:inputType="text" />
+    		    </TableRow>
+
+    		    <TableRow
+    		        android:layout_width="match_parent"
+    		        android:layout_height="match_parent"
+    		        android:layout_marginTop="2dp"
+    		        android:layout_weight="1" >
+
+    		        <TextView
+    		            android:layout_width="match_parent"
+    		            android:layout_height="match_parent"
+    		            android:layout_weight="2"
+    		            android:gravity="bottom"
+    		            android:text="Previous Crop2:" />
+
+    		        <EditText
+    		            android:id="@+id/crop2"
+    		            android:layout_width="match_parent"
+    		            android:layout_height="match_parent"
+    		            android:layout_weight="1"
+    		            android:imeOptions="actionNext"
+    		            android:inputType="text" />
+    		    </TableRow>
+
+    		    <TableRow
+    		        android:layout_width="match_parent"
+    		        android:layout_height="match_parent"
+    		        android:layout_marginTop="2dp"
+    		        android:layout_weight="1" >
+
+    		        <TextView
+    		            android:layout_width="match_parent"
+    		            android:layout_height="match_parent"
+    		            android:layout_weight="1"
+    		            android:gravity="bottom"
+    		            android:text="Sowing Date:" />
+
+    		        <EditText
+    		            android:id="@+id/sowingdt"
+    		            android:layout_width="match_parent"
+    		            android:layout_height="match_parent"
+    		            android:layout_weight="1"
+    		            android:clickable="false"
+    		            android:editable="false"
+    		            android:focusable="false"
+    		            android:imeOptions="actionNext"
+    		            android:inputType="text" />
+
+    		        <Button
+    		            android:id="@+id/sowingdate"
+    		            style="?android:attr/buttonStyleSmall"
+    		            android:layout_width="wrap_content"
+    		            android:layout_height="wrap_content"
+    		            android:text="Date" />
+    		    </TableRow>
+
+    		    <TableRow
+    		        android:layout_width="match_parent"
+    		        android:layout_height="match_parent"
+    		        android:layout_marginTop="2dp"
+    		        android:layout_weight="1" >
+
+    		        <TextView
+    		            android:layout_width="match_parent"
+    		            android:layout_height="match_parent"
+    		            android:layout_weight="1"
+    		            android:gravity="bottom"
+    		            android:text="Date of MOP:" />
+
+    		        <EditText
+    		            android:id="@+id/mopdt"
+    		            android:layout_width="match_parent"
+    		            android:layout_height="match_parent"
+    		            android:layout_weight="1"
+    		            android:clickable="false"
+    		            android:editable="false"
+    		            android:focusable="false"
+    		            android:imeOptions="actionNext"
+    		            android:inputType="text" />
+
+    		        <Button
+    		            android:id="@+id/mopdate"
+    		            style="?android:attr/buttonStyleSmall"
+    		            android:layout_width="wrap_content"
+    		            android:layout_height="wrap_content"
+    		            android:text="Date" />
+    		    </TableRow>
+    		    
+    		    <TableRow
+    		        android:layout_width="match_parent"
+    		        android:layout_height="wrap_content"
+    		        android:layout_weight="1" >
+
+    		        <TextView
+    		            android:layout_width="match_parent"
+    		            android:layout_height="match_parent"
+    		            android:layout_weight="1"
+    		            android:gravity="center_vertical"
+    		            android:text="Yield (q/acre) P0:" />
+
+    		        <EditText
+    		            android:id="@+id/yieldp0"
+    		            android:layout_width="match_parent"
+    		            android:layout_height="match_parent"
+    		            android:layout_weight="1"
+    		            android:ems="10"
+    		            android:inputType="number" />
+    		    </TableRow>
+
+    		    <TableRow
+    		        android:layout_width="match_parent"
+    		        android:layout_height="wrap_content"
+    		        android:layout_weight="1" >
+
+    		        <TextView
+    		            android:layout_width="match_parent"
+    		            android:layout_height="match_parent"
+    		            android:layout_weight="1"
+    		            android:gravity="center_vertical"
+    		            android:text="Yield (q/acre) P1:" />
+
+    		        <EditText
+    		            android:id="@+id/yieldp1"
+    		            android:layout_width="match_parent"
+    		            android:layout_height="match_parent"
+    		            android:layout_weight="1"
+    		            android:ems="10"
+    		            android:inputType="number" />
+    		    </TableRow>
+
+    		    <TableRow
+    		        android:layout_width="match_parent"
+    		        android:layout_height="wrap_content"
+    		        android:layout_weight="1" >
+
+    		        <TextView
+    		            android:layout_width="match_parent"
+    		            android:layout_height="match_parent"
+    		            android:layout_weight="1"
+    		            android:gravity="center_vertical"
+    		            android:text="Yield (q/acre) P2:" />
+
+    		        <EditText
+    		            android:id="@+id/yieldp2"
+    		            android:layout_width="match_parent"
+    		            android:layout_height="match_parent"
+    		            android:layout_weight="1"
+    		            android:ems="10"
+    		            android:inputType="number" />
+    		    </TableRow>
+
+    		    <TableRow
+    		        android:layout_width="match_parent"
+    		        android:layout_height="match_parent"
+    		        android:layout_marginTop="2dp"
+    		        android:layout_weight="1" >
+
+    		        <TextView
+    		            android:layout_width="match_parent"
+    		            android:layout_height="match_parent"
+    		            android:layout_weight="1"
+    		            android:gravity="bottom"
+    		            android:text="Irrigation 1:" />
+
+    		        <EditText
+    		            android:id="@+id/irridt1"
+    		            android:layout_width="match_parent"
+    		            android:layout_height="match_parent"
+    		            android:layout_weight="1"
+    		            android:clickable="false"
+    		            android:editable="false"
+    		            android:focusable="false"
+    		            android:imeOptions="actionNext"
+    		            android:inputType="text" />
+
+    		        <Button
+    		            android:id="@+id/irridate1"
+    		            style="?android:attr/buttonStyleSmall"
+    		            android:layout_width="wrap_content"
+    		            android:layout_height="wrap_content"
+    		            android:text="Date" />
+    		    </TableRow>
+
+    		    <TableRow
+    		        android:layout_width="match_parent"
+    		        android:layout_height="match_parent"
+    		        android:layout_marginTop="2dp"
+    		        android:layout_weight="1" >
+
+    		        <TextView
+    		            android:layout_width="match_parent"
+    		            android:layout_height="match_parent"
+    		            android:layout_weight="1"
+    		            android:gravity="bottom"
+    		            android:text="Irrigation 2:" />
+
+    		        <EditText
+    		            android:id="@+id/irridt2"
+    		            android:layout_width="match_parent"
+    		            android:layout_height="match_parent"
+    		            android:layout_weight="1"
+    		            android:clickable="false"
+    		            android:editable="false"
+    		            android:focusable="false"
+    		            android:imeOptions="actionNext"
+    		            android:inputType="text" />
+
+    		        <Button
+    		            android:id="@+id/irridate2"
+    		            style="?android:attr/buttonStyleSmall"
+    		            android:layout_width="wrap_content"
+    		            android:layout_height="wrap_content"
+    		            android:text="Date" />
+    		    </TableRow>
+
+    		    <TableRow
+    		        android:layout_width="match_parent"
+    		        android:layout_height="match_parent"
+    		        android:layout_marginTop="2dp"
+    		        android:layout_weight="1" >
+
+    		        <TextView
+    		            android:layout_width="match_parent"
+    		            android:layout_height="match_parent"
+    		            android:layout_weight="1"
+    		            android:gravity="bottom"
+    		            android:text="Irrigation 3:" />
+
+    		        <EditText
+    		            android:id="@+id/irridt3"
+    		            android:layout_width="match_parent"
+    		            android:layout_height="match_parent"
+    		            android:layout_weight="1"
+    		            android:clickable="false"
+    		            android:editable="false"
+    		            android:focusable="false"
+    		            android:imeOptions="actionNext"
+    		            android:inputType="text" />
+
+    		        <Button
+    		            android:id="@+id/irridate3"
+    		            style="?android:attr/buttonStyleSmall"
+    		            android:layout_width="wrap_content"
+    		            android:layout_height="wrap_content"
+    		            android:text="Date" />
+    		    </TableRow>
+
+    		    <TableRow
+    		        android:layout_width="match_parent"
+    		        android:layout_height="match_parent"
+    		        android:layout_marginTop="2dp"
+    		        android:layout_weight="1" >
+
+    		        <TextView
+    		            android:layout_width="match_parent"
+    		            android:layout_height="match_parent"
+    		            android:layout_weight="1"
+    		            android:gravity="bottom"
+    		            android:text="Irrigation 4:" />
+
+    		        <EditText
+    		            android:id="@+id/irridt4"
+    		            android:layout_width="match_parent"
+    		            android:layout_height="match_parent"
+    		            android:layout_weight="1"
+    		            android:clickable="false"
+    		            android:editable="false"
+    		            android:focusable="false"
+    		            android:imeOptions="actionNext"
+    		            android:inputType="text" />
+
+    		        <Button
+    		            android:id="@+id/irridate4"
+    		            style="?android:attr/buttonStyleSmall"
+    		            android:layout_width="wrap_content"
+    		            android:layout_height="wrap_content"
+    		            android:text="Date" />
+    		    </TableRow>
+
+    		    <TableRow
+    		        android:layout_width="match_parent"
+    		        android:layout_height="match_parent"
+    		        android:layout_marginTop="2dp"
+    		        android:layout_weight="1" >
+
+    		        <TextView
+    		            android:layout_width="match_parent"
+    		            android:layout_height="match_parent"
+    		            android:layout_weight="1"
+    		            android:gravity="bottom"
+    		            android:text="Irrigation 5:" />
+
+    		        <EditText
+    		            android:id="@+id/irridt5"
+    		            android:layout_width="match_parent"
+    		            android:layout_height="match_parent"
+    		            android:layout_weight="1"
+    		            android:clickable="false"
+    		            android:editable="false"
+    		            android:focusable="false"
+    		            android:imeOptions="actionNext"
+    		            android:inputType="text" />
+
+    		        <Button
+    		            android:id="@+id/irridate5"
+    		            style="?android:attr/buttonStyleSmall"
+    		            android:layout_width="wrap_content"
+    		            android:layout_height="wrap_content"
+    		            android:text="Date" />
+    		    </TableRow>
+
+    		    <TableRow
+    		        android:layout_width="match_parent"
+    		        android:layout_height="match_parent"
+    		        android:layout_marginTop="2dp"
+    		        android:layout_weight="1" >
+
+    		        <TextView
+    		            android:layout_width="match_parent"
+    		            android:layout_height="match_parent"
+    		            android:layout_weight="1"
+    		            android:gravity="bottom"
+    		            android:text="Irrigation 6:" />
+
+    		        <EditText
+    		            android:id="@+id/irridt6"
+    		            android:layout_width="match_parent"
+    		            android:layout_height="match_parent"
+    		            android:layout_weight="1"
+    		            android:clickable="false"
+    		            android:editable="false"
+    		            android:focusable="false"
+    		            android:imeOptions="actionNext"
+    		            android:inputType="text" />
+
+    		        <Button
+    		            android:id="@+id/irridate6"
+    		            style="?android:attr/buttonStyleSmall"
+    		            android:layout_width="wrap_content"
+    		            android:layout_height="wrap_content"
+    		            android:text="Date" />
+    		    </TableRow>
+    		</LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f0f0f0f0" >
+        
+        <aksha.adapters.RefreshableListView
+           	android:id="@+id/current_refreshable_list"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:headerDividersEnabled="true"
+			android:footerDividersEnabled="true"
+			android:listSelector="@android:color/transparent"
+			android:cacheColorHint="@android:color/transparent"
+			android:divider="@null"
+			android:dividerHeight="10dp" >
+		</aksha.adapters.RefreshableListView>
+
+        <!-- <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:headerDividersEnabled="true"
+			android:footerDividersEnabled="true"
+			android:listSelector="@android:color/transparent"
+			android:cacheColorHint="@android:color/transparent"
+			android:divider="@null"
+			android:dividerHeight="10dp" >
+        </ListView> -->
+        
+    </FrameLayout>
+
+   <!--  <ImageView
+        android:id="@+id/createactivity"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/plus"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="20dp" /> -->
+
+</FrameLayout>

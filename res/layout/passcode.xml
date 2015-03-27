@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:tools="http://schemas.android.com/tools"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+	 
+	    <!-- Header aligned to top -->
+	    
+	 
+	    <RelativeLayout
+	        android:id="@+id/header"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="#FFFFFF"
+	        android:layout_alignParentLeft="true"
+	        android:gravity="left" >
+	 
+	        <!--  Header  Starts-->
+
+	        <FrameLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:background="#7a89b6"
+	            android:padding="2dp" >
+
+	            <ImageView
+	                android:layout_width="60dp"
+	                android:layout_height="60dp"
+	                android:src="@drawable/ic_launcher"
+	                android:background="#FFFFFF"
+	                android:layout_marginLeft="8dp"
+	                android:layout_marginTop="5dp"
+	                android:layout_marginBottom="5dp" />
+
+	            <TextView
+	                android:id="@+id/ver"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:text="Ver: "
+	                android:gravity="right"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	        </FrameLayout>
+      
+        <!--  Header Ends -->
+	        
+	    </RelativeLayout>
+	 
+	    <!-- Footer aligned to bottom -->
+	 
+	    <RelativeLayout
+	        android:id="@+id/footer"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:gravity="bottom"
+	        android:background="#F7f7f7"
+	        >
+	 
+	         
+                <!-- Logo Start-->
+                
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    
+                    android:background="@android:color/white"
+                    android:src="@drawable/passcodeimg" />
+
+                <!-- Logo Ends -->
+        
+	    </RelativeLayout>
+	 
+	    <!-- Content below header and above footer -->
+	 
+	    <RelativeLayout
+	        android:id="@+id/content"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_above="@id/footer"
+	        android:layout_below="@id/header"
+	        android:paddingTop="5dp"
+	        android:paddingLeft="5dp"
+	        android:paddingRight="5dp"
+	        android:background="#FFFFFF">
+
+	        <TextView
+	            android:id="@+id/textView1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginLeft="2dp"
+	            android:text="Passcode"
+	            android:textSize="22sp" />
+
+	        <TextView
+	            android:id="@+id/textView2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignLeft="@+id/textView1"
+	            android:layout_alignParentRight="true"
+	            android:layout_below="@+id/textView1"
+	            android:text="Please set your passcode,This will be used for all future Quick login*" />
+
+	        <EditText
+	            android:id="@+id/et_passcode"
+	            android:layout_width="wrap_content"
+	            android:layout_height="40dp"
+	            android:layout_alignLeft="@+id/textView2"
+	            android:layout_alignParentRight="true"
+	            android:layout_below="@+id/textView2"
+	            android:layout_marginTop="2dp"
+	            android:ems="10"
+	            android:hint="Enter Passcode"
+	            android:typeface="serif"
+	            android:inputType="numberPassword"
+	            android:maxLength="4" >
+               
+	        </EditText>
+
+	        <Button
+	            android:id="@+id/txt_setpasscode"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_below="@+id/et_passcode"
+	            android:layout_marginTop="5dp"
+	            android:textColor="#ffffff"
+	            android:text="Set"
+	            android:background="@drawable/buttonorange" />
+
+	        <TextView
+	            android:id="@+id/textView3"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignLeft="@+id/et_passcode"
+	            android:layout_alignParentRight="true"
+	            android:layout_below="@+id/txt_setpasscode"
+	            android:layout_marginTop="5dp"
+	            android:text="If you have forgot your passcode,Please log in once again to proceed click here.*" />
+
+	        <Button
+	            android:id="@+id/txt_resetpasscode"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_below="@+id/textView3"
+	            android:text="Click"
+	            android:background="@drawable/buttongrey" />
+        
+	    </RelativeLayout>
+	 
+	</RelativeLayout>

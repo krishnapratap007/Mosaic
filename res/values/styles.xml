@@ -1,0 +1,79 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:typeface">serif</item>
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="fullScreenSplash" parent="android:Theme.Holo.Light.NoActionBar.Fullscreen"></style>
+    
+    
+    
+    <!--  coloumn Dividers used in Nutritional Information Table-->
+    <style name="Divider">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#f0f0f0f0</item>
+    </style>
+
+    <style name="Divider_invisible">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    
+    <style name="CustomProgressBarcolor" parent="android:Widget.ProgressBar.Horizontal">
+<item name="android:indeterminateOnly">false</item>
+          <item name="android:progressDrawable">@drawable/progressbar_fistcolor</item>
+          <item name="android:minHeight">10dip</item>
+          <item name="android:maxHeight">20dip</item>
+</style>
+         
+           <style name="CustomProgressBarcolor2" parent="android:Widget.ProgressBar.Horizontal">
+<item name="android:indeterminateOnly">false</item>
+          <item name="android:progressDrawable">@drawable/progressbar_secndcolor</item>
+          <item name="android:minHeight">10dip</item>
+          <item name="android:maxHeight">20dip</item>
+</style>
+    
+           
+              <style name="CustomProgressBarcolor3" parent="android:Widget.ProgressBar.Horizontal">
+<item name="android:indeterminateOnly">false</item>
+          <item name="android:progressDrawable">@drawable/progressbar_thirdcolor</item>
+          <item name="android:minHeight">10dip</item>
+          <item name="android:maxHeight">20dip</item>
+</style>
+               <style name="CustomProgressBarcolor4" parent="android:Widget.ProgressBar.Horizontal">
+<item name="android:indeterminateOnly">false</item>
+          <item name="android:progressDrawable">@drawable/progressbar_fourcolor</item>
+          <item name="android:minHeight">10dip</item>
+          <item name="android:maxHeight">20dip</item>
+</style>
+
+               <style name="btnStyleOrangestback" parent="@android:style/Widget.Button">
+       <item name="android:textSize">18sp</item>
+      <item name="android:layout_width">match_parent</item>
+      <item name="android:layout_height">wrap_content</item>
+       <item name="android:textStyle">bold</item>
+       <item name="android:textColor">#ebed3d</item>
+       <item name="android:background">#6495ED</item>
+       <item name="android:shadowColor">#000000</item>
+       <item name="android:shadowDx">1</item>
+       <item name="android:shadowDy">1</item>
+       <item name="android:shadowRadius">0.6</item>
+       <item name="android:padding">10dip</item>
+   </style>
+    
+</resources>
